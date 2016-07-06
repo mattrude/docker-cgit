@@ -13,7 +13,7 @@ Using your own git repository (make backup of your original data before to load 
 docker run -d -p 80:80 -v $PWD/gitrepo:/mnt/git oems/cgit
 ~~~~
 
-![cgit_shot1.](https://github.com/mattrude/docker-cgit/master/images/cgit_shot1.png)
+![cgit_shot1.](https://github.com/mattrude/docker-cgit/raw/master/images/cgit_shot1.png)
 
 ## Build your own:
 
