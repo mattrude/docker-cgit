@@ -1,10 +1,10 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER OEMS <oscaremu@gmaiil.com>
 
-RUN apt-get update && \
-    apt-get install -y curl wget supervisor xz-utils build-essential autoconf automake libtool libssl-dev highlight python-markdown apache2 openssh-server
+RUN apt update && \
+    apt install -y curl wget supervisor xz-utils build-essential autoconf automake libtool libssl-dev highlight python-markdown nginx openssh-server
 
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV CGIT_VERSION 1.0
 ENV MD5_CHECKSUM 1dbd155da1c4adc89703fb1faf249dff
